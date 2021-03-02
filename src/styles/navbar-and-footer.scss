@@ -1,0 +1,37 @@
+@import "variables";
+
+/* NAVBAR AND FOOTER */
+.navbar,
+.footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: $secondary-color;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  top: 0;
+  height: $default-nav-height;
+}
+
+.navlink {
+  margin: 0 5px; 
+  color: $font-color;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.footer {
+  bottom: 0;
+  height: $default-footer-height;
+}
+
+a {
+  text-decoration: none;
+}
