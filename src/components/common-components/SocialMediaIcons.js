@@ -3,6 +3,6 @@ import SocialMediaIcon from "./SocialMediaIcon";
 
 export default function SocialMediaIcons() {    
     return (
-        <SocialMediaIcon />
+        <SocialMediaIcon className="social-media-icons" />
     )
 }

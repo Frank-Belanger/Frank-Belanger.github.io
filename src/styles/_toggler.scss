@@ -1,5 +1,9 @@
 @import 'variables';
 
+.toggler {
+  align-self: center;
+}
+
 .switch {
     position: relative;
     display: inline-block;
@@ -21,7 +25,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $accent-color;
+    background-color: $main-color;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -43,7 +47,7 @@
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px $accent-color;
+    box-shadow: 0 0 1px ;
   }
   
   input:checked + .slider:before {

@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from '../../Context';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons';
-import { library } from "@fortawesome/fontawesome-svg-core";
-library.add(faCloudDownloadAlt);
+export default function ResumeButton(props) {
+  const { FontAwesomeIcon, textContent } = useContext(Context);
+  let CSSClasses = ["button button-download-resume"];
+  if(Object.keys(props).length !== 0)
+  {
+    props.addClassName.forEach(element => {
+      CSSClasses.push(element);
+    });
+  }
 
-export default function ResumeButton() {
     return (
-      <div className="button button-download-resume">
-        <FontAwesomeIcon icon={['fas', 'cloud-download-alt']} size="2x" />
-        <p>Resume</p>
+      <div className={ CSSClasses.join(' ') }>
+        <FontAwesomeIcon icon="cloud-download-alt" size="2x" className="resume-button-icon" />
+        <p  className="resume-text"> { textContent.navigation.resume }</p>
       </div>
     )
 }

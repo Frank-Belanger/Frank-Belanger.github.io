@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from '../../Context';
 import Navlink from './Navlink';
-import PreviousButton from '../buttons/PreviousButton';
-import NextButton from '../buttons/NextButton';
 
 export default function Navigation() {
+    const { textContent } = useContext(Context);
     return (
-        <span>
-            <PreviousButton />
-            <Navlink title="Home" link="/" />
-            <Navlink title="Portfolio" link="/portfolio" />
-            <Navlink title="Resume" link="/resume" />
-            <NextButton />
+        <span className="nav-links">
+            <Navlink title={ textContent.navigation.home } link="/" />
+            <Navlink title={ textContent.navigation.portfolio } link="/portfolio" />
+            <Navlink title={ textContent.navigation.resume } link="/resume" />
         </span>
     )
 }

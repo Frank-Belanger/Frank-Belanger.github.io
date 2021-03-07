@@ -1,9 +1,7 @@
 @import "variables";
 
 /* BODY */
-.main-section,
-.resume-section,
-.portfolio-section {
+.main-section {
   height: $default-body-height;
   margin-top: $default-nav-height;
   margin-bottom: $default-footer-height;

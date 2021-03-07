@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from "../../Context";
 
 export default function HeroTitle() {
+    const { FontAwesomeIcon } = useContext(Context);
+
     return (
-        <h3>Hero Title</h3>
+        <div className="hero-title">
+            <FontAwesomeIcon
+                className="hero-title-image"
+                icon="user-circle"
+                size="3x"
+            />
+        </div>
     )
 }

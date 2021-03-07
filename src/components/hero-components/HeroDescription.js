@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from '../../Context';
 
 export default function HeroDescription() {
+    const { textContent } = useContext(Context);
+
     return (
-        <h3>Hero description</h3>
+        <div className="hero-description">{ textContent.home.description }</div>
     )
 }

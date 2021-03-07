@@ -1,0 +1,53 @@
+@import 'variables';
+
+/* Resume page */
+.resume-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.resume-container {
+  background-color: $secondary-color;
+  //width: 90%;
+  //max-width: 500px;
+  max-height: 90%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+}
+
+.resume-description {
+  //height: 65%;
+  padding: 1rem 1.5rem;
+  margin: 0.5em;
+  display: flex;
+  font-size: $font-size-sm;
+}
+
+.resume-left-side {
+  margin: 1vh;
+  display: grid;
+  text-align: end;
+}
+
+.resume-right-side {
+  margin: 1vh;
+  display: grid;
+  text-align: start;
+}
+
+.resume-right-side-element,
+.resume-left-side-element {
+  padding-bottom: 8px;
+}
+
+.resume-right-side-line {
+  padding-bottom: 3px;
+}
+
+.resume-section-icon {
+  margin-right: 5px;
+}

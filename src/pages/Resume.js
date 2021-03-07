@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
+import ResumeContainer from '../components/resume-components/ResumeContainer';
 
-export default function Resume({initialCount}) {
-    const [count, setCount] = useState(initialCount);
-
+export default function Resume() {
     return (
-        <div className="resume-section">
-            Count: {count}
-            <button onClick={() => setCount(initialCount)}>Reset</button>
-            <button onClick={() => setCount(prevCount => prevCount - 1)}>-</button>
-            <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>
+        <div className="main-section">
+            <ResumeContainer />
         </div>
     );
 }
-        /*<div className="resume-section">
-            <h1>Resume page</h1>
-        </div>
-    )
-}*/

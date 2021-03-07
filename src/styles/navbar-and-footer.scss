@@ -21,9 +21,11 @@
 .navlink {
   margin: 0 5px; 
   color: $font-color;
+  font-size: $font-size-xl;
 }
 
 .nav-links {
+  align-self: center;
   list-style: none;
 }
 
@@ -34,4 +36,5 @@
 
 a {
   text-decoration: none;
+  margin: 0 10px;
 }

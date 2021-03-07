@@ -16,22 +16,14 @@
   }
 }
 
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
+.button-outline {
+  @include button-setup(transparent, 7px, 10px, 5px, $font-color, 10px);
+  transition: border-color 250ms;
 
-.previous:hover {
-  background-color: $accent-color;
-  cursor: pointer;
-  color: black;
-}
-
-.next:hover {
-  background-color: $accent-color;
-  cursor: pointer;
-  color: white;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
 
 .round {
@@ -40,6 +32,21 @@ a {
 }
 
 .button-download-resume {
-  display: flex;
-  position: relative;
+  display: grid;
+  align-self: center;
+  justify-content: center;
+}
+
+.resume-button-icon {
+  align-self: start;
+}
+
+.resume-text {
+  grid-column: 2 / 2;
+  align-self: center;
+  padding-left: 0.4em;
+}
+
+.social-media-icons {
+  display: grid;
 }
