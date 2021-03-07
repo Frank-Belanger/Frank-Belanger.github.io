@@ -6,7 +6,7 @@ const frenchText = {
     },
     home: {
       description:
-        'Bonjour! Mon nom est François Bélanger et je suis developpeur Full-Stack.',
+        'Bonjour! Mon nom est François Bélanger et je suis developpeur Full-Stack. Cette application a été produite à l\'aide des technologies suivantes:',
     },
     resume: {
       education: {

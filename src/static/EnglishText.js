@@ -6,7 +6,7 @@ const englishText = {
     },
     home: {
       description:
-        'Hi! My name is François Bélanger and I am a Full-Stack developer.',
+        'Hi! My name is François Bélanger and I am a Full-Stack developer. This app was made with the following technologies:',
     },
     resume: {
       education: {
