@@ -5,6 +5,6 @@ export default function HeroDescription() {
     const { textContent } = useContext(Context);
 
     return (
-        <div className="hero-description">{ textContent.home.description }</div>
+        <div className="hero-description">{ textContent.home.greetings }<br/>{ textContent.home.description }</div>
     )
 }

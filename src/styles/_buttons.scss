@@ -6,6 +6,7 @@
 .button-filled {
   color: $font-color;
   font-family: $main-font;
+  font-size: $font-size-lg;
   cursor: pointer;
   outline: none;
   transition: color 250ms;
@@ -38,7 +39,7 @@
 }
 
 .resume-button-icon {
-  align-self: start;
+  align-self: center;
 }
 
 .resume-text {
@@ -47,6 +48,14 @@
   padding-left: 0.4em;
 }
 
-.social-media-icons {
-  display: grid;
+.social-media-links {
+  align-self: center;
+}
+
+.social-media-icon {
+  font-size: $font-size-xl;
+}
+
+.social-media-icon-lndscp{
+  display: none;
 }

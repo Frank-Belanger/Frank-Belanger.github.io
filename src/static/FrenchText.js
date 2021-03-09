@@ -1,36 +1,39 @@
-const frenchText = {
-    navigation: {
-      home: 'Accueil',
-      portfolio: 'Portfolio',
-      resume: 'CV',
+const frenchText = {  
+  download: {
+    resume: "https://raw.githubusercontent.com/Frank-Belanger/Frank-Belanger.github.io/main/src/static/2021_Francois_Belanger_CV.pdf"
+  },
+  navigation: {
+    home: 'Accueil',
+    portfolio: 'Portfolio',
+    resume: 'CV',
+  },
+  home: {
+    greetings: 'Bonjour!',
+    description: 'Mon nom est François Bélanger et je suis developpeur Full-Stack. J\'ai utilisé les technologies suivantes pour construire cette application:'
+  },
+  resume: {
+    education: {
+    title: 'Éducation',
+    degree: 'Science informatique, B. Sc.',
+    university: 'Université de Sherbrooke',
+    years: '[ 2017-2020 ]'
     },
-    home: {
-      description:
-        'Bonjour! Mon nom est François Bélanger et je suis developpeur Full-Stack. Cette application a été produite à l\'aide des technologies suivantes:',
+    experience: {
+      title: 'Expérience',
+      place: 'Wolters Kluwer',
+      year: '[ 2020 - présent ]',
+      work: 'Développeur à l\'automatisation'
     },
-    resume: {
-      education: {
-      title: 'Éducation',
-      degree: 'Science informatique, B. Sc.',
-      university: 'Université de Sherbrooke (Sherbrooke, QC)',
-      years: '[ 2017-2020 ]'
-      },
-      experience: {
-        title: 'Expérience',
-        place: 'Wolters Kluwer',
-        year: '[ 2020 - présent ]',
-        work: 'Développeur à l\'automatisation'
-      },
-      stack: {
-        title: 'Stack'
-      },
-      languages: {
-        title: 'Langues',
-        english: 'Anglais (Fluent)',
-        french: 'Français (Langue natale)',
-        german: 'Allemand (Base)'
-      }
+    stack: {
+      title: 'Stack'
+    },
+    languages: {
+      title: 'Langues',
+      english: 'Anglais (Fluent)',
+      french: 'Français (Langue natale)',
+      german: 'Allemand (Base)'
     }
+  }
 };
 
 export default frenchText;

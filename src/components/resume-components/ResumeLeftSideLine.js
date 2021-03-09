@@ -6,7 +6,7 @@ export default function ResumeLeftSideLine(props) {
     
     return (          
         <div className="resume-left-side-element">
-            <FontAwesomeIcon icon={ props.iconProps.icon } className="resume-section-icon"/>
+            <FontAwesomeIcon icon={ props.icon } className="resume-section-icon"/>
             { props.text }
         </div>
     );

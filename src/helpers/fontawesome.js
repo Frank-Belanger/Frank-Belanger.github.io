@@ -6,8 +6,10 @@ import {
   faGraduationCap,
   faBriefcase,
   faTerminal,
-  faLanguage,
-  faUserCircle
+  faComment,
+  faUserCircle,
+  faBars,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -31,8 +33,10 @@ library.add(
   faGraduationCap,
   faBriefcase,
   faTerminal,
-  faLanguage,
+  faComment,
   faUserCircle,
+  faBars,
+  faTimes,
   faEnvelope,
   faJs,
   faReact,

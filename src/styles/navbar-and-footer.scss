@@ -16,6 +16,7 @@
 .navbar {
   top: 0;
   height: $default-nav-height;
+  align-items: center;
 }
 
 .navlink {
@@ -24,9 +25,45 @@
   font-size: $font-size-xl;
 }
 
-.nav-links {
+.nav-links-lg-screen {
   align-self: center;
   list-style: none;
+}
+
+.nav-links-sm-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  margin-top: $default-nav-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $secondary-color;
+  opacity: 0.95;
+  transition: all 0.3s linear;
+}
+
+.nav-sm-screen {
+  display: none;
+}
+
+.show-nav {
+  height: $default-body-height;
+}
+
+.navlink-sm-screen {
+  height: 30%;
+  text-align: center;
+  transition: all 0.3s linear;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {

@@ -1,0 +1,86 @@
+@import 'variables';
+
+@media (orientation: portrait) and (max-width: 725px){
+  .resume-section {
+    width: 90%;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 1180px){
+  .main-section {
+    background-image: url("../images/bg-lg-hgt-4k.jpg");
+  }
+}
+
+@media (orientation: portrait) and (max-width: 530px){
+  .hero-content-container {
+    width: 80%;
+  }
+
+  .resume-section {
+    width: 95%;
+  }
+
+  .resume-container {
+    padding: 1rem 0;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 480px){
+  .nav-links-lg-screen {
+    display: none;
+  }
+
+  .nav-sm-screen {
+    display: inline-block;    
+  }
+
+  .right-side-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+  }
+
+  .resume-left-side {
+    width: 100px;
+  }
+
+  .resume-description,
+  .button-outline,
+  .hero-description,
+  .hero-content-container {
+    font-size: $font-size-sm;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 410px){
+  .resume-section-icon {
+    display: none;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 380px){
+  .resume-left-side {
+  width: 120px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 330px) {
+  .footer .button-download-resume {
+    display: none;
+  }
+
+  .social-media-links {
+    width: 100%;
+    text-align: center;
+  }
+
+  .resume-description {
+    font-size: $font-size-xxxs;
+    height: 90%;
+  }
+
+  .resume-container {
+    height: 65%;
+  }
+}

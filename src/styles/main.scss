@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import "variables";
 @import "navbar-and-footer";
 @import "body";
@@ -5,6 +6,8 @@
 @import "buttons";
 @import "toggler";
 @import "resume";
+@import "media-queries-landscape";
+@import "media-queries-portrait";
 
 /* MAIN */
 * {

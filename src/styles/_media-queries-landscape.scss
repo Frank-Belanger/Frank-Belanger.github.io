@@ -1,0 +1,163 @@
+@import "variables";
+
+@media (orientation: landscape) and (min-width: 1920px) {
+  .main-section {
+    background-image: url("../images/bg-4k.jpg");
+  }
+}
+
+@media (min-height: 900px) {
+  .navbar {
+    height: 55px;
+  }
+
+  .footer {
+    height: 50px;
+  }
+
+  .main-section {
+    height: calc(100vh - 55px - 50px);
+    margin-top: 55px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1920px) {
+  /* NAVBAR AND FOOTER */
+  .navbar,
+  .footer {
+    font-size: $font-size-xl;
+  }
+
+  .toggler {
+    font-size: 1rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 640px) {
+  .main-section {
+    background-image: url("../images/bg-4k.jpg");
+  }
+
+  
+}
+
+@media (orientation: landscape) and (max-height: 450px) {
+  .navbar {
+    height: 12vh;
+  }
+
+  .social-media-icons-landscape {
+    display: inline-block;
+  }
+
+  .main-section {
+    height: 90vh;
+    margin-top: 10vh;
+    margin-bottom: 0;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .hero-content-container {
+    width: 95%;
+    max-width: none;
+    max-height: 80vh;
+  }
+
+  .hero-title {
+    padding: 1rem 0 0 0;
+  }
+
+  .hero-description {
+    padding: 0 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-tech-stack-section {
+    padding-bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+
+  /* Resume section */
+  .resume-section {
+    width: 100%;
+  }
+
+  .resume-container {
+    width: 95%;
+    max-width: none;
+    padding: 2rem 0rem 2rem 0rem;
+  }
+
+  .resume-description {
+    padding: 0 1.5rem;
+    margin: 0;
+  }
+
+  .resume-left-side-element,
+  .resume-right-side-element {
+    padding: 3px;
+    margin-bottom: 4px;
+  }
+
+  .resume-right-side-element:nth-child(3),
+  .resume-left-side-element:nth-child(3) {
+    display: none;
+  }
+
+  .right-side-stack-item {
+    margin-bottom: 0.1rem;
+  }
+
+  .stacklist {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .buttons-container {
+    margin: 0.5rem 0;
+  }
+
+  .button-outline {
+    font-size: $font-size-sm;
+  }
+
+  .social-media-icon-lndscp {
+    display: inline-block;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 330px) {
+  .hero-title {
+    display: none;
+  }
+
+  .hero-tech-stack-section {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+
+  .hero-description {
+    font-size: $font-size-lg;
+  }
+
+  .resume-description {
+    font-size: $font-size-xs;
+  }
+
+  .resume-left-side-element,
+  .resume-right-side-element {
+    margin-bottom: 5px;
+    height: 30%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 330px) {
+  .resume-description {
+    font-size: $font-size-xxs;
+  }
+}

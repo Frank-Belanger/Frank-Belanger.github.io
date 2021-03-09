@@ -18,12 +18,21 @@ export default function ResumeRightSide() {
                 <ResumeRightSideLine text={ textContent.resume.experience.year } />
             </div>
             <div className="resume-right-side-element">
-                Temporairement Inactif
-            </div>
-            <div className="resume-right-side-element">
                 <ResumeRightSideLine text={ textContent.resume.languages.french } />
                 <ResumeRightSideLine text={ textContent.resume.languages.english } />
                 <ResumeRightSideLine text={ textContent.resume.languages.german } />
+            </div>
+            <div className="resume-right-side-element right-side-stack-grid">
+                <div className="right-side-stack-item">Java</div>
+                <div className="right-side-stack-item">Python</div>
+                <div className="right-side-stack-item">Javascript</div>
+                <div className="right-side-stack-item">C#</div>
+                <div className="right-side-stack-item">C++</div>
+                <div className="right-side-stack-item">Bash</div>
+                <div className="right-side-stack-item">Powershell</div>
+                <div className="right-side-stack-item">PostgreSQL</div>
+                <div className="right-side-stack-item">MongoDB</div>
+                <div className="right-side-stack-item">NoSQL</div>
             </div>
         </div>
     );
