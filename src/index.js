@@ -6,9 +6,10 @@ import App from "./App";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  //<React.StrictMode>
-  <Router basename={process.env.PUBLIC_URL}>
-    <App />
-  </Router>,
+  <React.StrictMode>
+    <Router basename={process.env.PUBLIC_URL}>
+      <App />
+    </Router>
+  </React.StrictMode>,
   rootElement
 );
