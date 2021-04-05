@@ -19,7 +19,6 @@ export default function SocialMediaIcons(props) {
                 prefix: "fab"
             }
     ]
-    console.log(props.SocialMediaIconsLandscape)
     return (
         <div className={`social-media-links ${ props.SocialMediaIconsLandscape }`}>
             {socialMedia.map((item, index) => (
