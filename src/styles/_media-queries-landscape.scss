@@ -39,7 +39,38 @@
     background-image: url("../images/bg-4k.jpg");
   }
 
-  
+  .portfolio-card {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    grid-template-rows: 2vh 10vh 5vh 1vh auto 10vh;
+  }
+
+  .portfolio-card-title {    
+    font-size: 3vw;
+  }
+
+  .portfolio-card-desc {
+    grid-row-start: 3;
+    font-size: 2vw;
+  }
+
+  .portfolio-card-img {
+    grid-row-start: 5;
+  }
+
+  .portfolio-card-buttons-container {
+    grid-row-start: 6;
+  }
+
+  .carousel-dots {
+    height: 1.5rem;
+
+    .dot {
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+}
 }
 
 @media (orientation: landscape) and (max-height: 450px) {
@@ -124,7 +155,7 @@
   }
 
   .button-outline {
-    font-size: $font-size-sm;
+    font-size: 1rem;
   }
 
   .social-media-icon-lndscp {

@@ -9,7 +9,10 @@ import {
   faComment,
   faUserCircle,
   faBars,
-  faTimes
+  faTimes,
+  faCaretLeft,
+  faCaretRight,
+  faCogs
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -37,6 +40,9 @@ library.add(
   faUserCircle,
   faBars,
   faTimes,
+  faCaretLeft,
+  faCaretRight,
+  faCogs,
   faEnvelope,
   faJs,
   faReact,

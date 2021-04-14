@@ -11,6 +11,16 @@ const englishText = {
     greetings: 'Hi!',
     description: 'My name is François Bélanger and I am a Full-Stack developer. I have used the following technologies in order to build this app:'
   },
+  portfolio: [
+    { 
+      key: 'musicRecommender', 
+      title: 'Music Recommender', 
+      desc: 'A simple app using Spotify\'s API',
+      src: 'https://github.com/Frank-Belanger/music-recommender',
+      url: 'https://frank-belanger.github.io/music-recommender/',
+      img: 'https://github.com/Frank-Belanger/Frank-Belanger.github.io/raw/main/src/images/musicRecommender.png'
+    }
+  ],
   resume: {
     education: {
     title: 'Education',

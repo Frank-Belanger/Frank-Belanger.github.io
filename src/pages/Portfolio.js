@@ -1,9 +1,10 @@
 import React from 'react';
+import PortfolioSectionContainer from '../components/portfolio-page-components/PortfolioSectionContainer';
 
 export default function Portfolio() {
     return (
         <div className="main-section">
-            <h1>Portfolio page</h1>
+            <PortfolioSectionContainer/>
         </div>
     )
 }

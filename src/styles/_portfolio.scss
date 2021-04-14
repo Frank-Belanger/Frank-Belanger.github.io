@@ -1,0 +1,140 @@
+@import 'variables';
+
+.portfolio-section-container {
+    width: 80vw;
+    height: calc(#{$default-body-height} - 5vh);
+    display: grid;
+    grid-template-rows: 93% 7%;
+    grid-template-columns: 10% 80% 10%;
+    background-color: $secondary-color;
+    place-self: center;
+    border-radius: 15px;
+}
+
+.portfolio.button{
+    align-self: center;
+    border: none;
+    background: none;
+    font-size: 6vw;
+
+    &.left {
+        justify-self: start;
+        padding-left: 3vw;
+    }
+
+    &.right {
+        justify-self: end;
+        padding-right: 3vw;
+    }
+}
+
+.portfolio-cards-container {
+    width: 64vw;
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-self: center;
+}
+
+.portfolio-cards-wrapper {
+    height: 100%;
+}
+
+.inline-block {
+    display: inline-block;    
+    width: 64vw;
+    height: 100%;
+    margin-right: 3vw;
+}
+
+.portfolio-card {
+    width: 64vw;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2vh 5vh 1vh 6vh 1.5vh 54vh 1.5vh 4vh 1vh;
+    grid-template-columns: 100%;
+    transition: all 0.5s ease-out;
+    margin: 0 0;
+}
+
+.portfolio-card-title {
+    font-size: 3rem;
+    width: fit-content;
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 2;
+    place-self:center;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio-card-desc {
+    display: inline-block;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: end;
+    text-align: center;
+    place-self: center;
+    font-size: $font-size-lg;
+    width: 100%;
+}
+
+.portfolio-card-img {    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: clamp(200px, 64vw, 64vw);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    justify-self: center;
+    padding: 1rem 0;
+    border-radius: 2rem;
+}
+
+.portfolio-card-buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 1 / end;
+    grid-row-start: 8;
+}
+
+.portfolio-btn {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 5px;
+    place-self: center;
+    place-items: center;
+    padding: 5px 15px;
+    max-height: 3rem;
+}
+
+.carousel-dots {
+    height: 2rem;
+    display: inline-block;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    place-self: center;
+
+    .dot {
+        background: $font-color;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 1rem;
+        margin: 0 0.7rem;
+        outline: none;
+        width: 1rem;
+        place-self: center;
+
+        &.active {
+            background: $accent-color;
+        }
+    }
+}

@@ -17,6 +17,53 @@
     width: 80%;
   }
 
+  /* PORTFOLIO SECTION*/
+  .portfolio-section-container {
+    width: 90vw;
+  }
+
+  .portfolio.button{
+    font-size: 4rem;
+  }
+
+  .portfolio-card {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 100%;
+    row-gap: 3vw;
+    column-gap: 0;
+    padding: 4vh 0;
+    transition: all 0.5s ease-out;
+  }
+
+  .portfolio-card-title{
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    font-size: $font-size-xl;
+  }
+
+  .portfolio-card-desc {
+    text-align: center;
+    width: 95%;
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .portfolio-card-img{
+    display: none;
+  }
+
+  .portfolio-card-buttons-container {
+    grid-row-start: 3;
+  }
+
+  .portfolio-btn {
+    font-size: 10rem;
+  }
+
+  /* RESUME SECTION */
   .resume-section {
     width: 95%;
   }

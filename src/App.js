@@ -22,6 +22,8 @@ function App() {
 
   const [textContent, setTextContent] = useState(DEFAULT_TEXT_CONTENT);
   const [languageToggle, setLanguageToggle] = useState(DEFAULT_LANGUAGE_TOGGLE);
+  const [isMoving, setIsMoving] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   function handleSwitch() {
     languageToggle === false
@@ -33,7 +35,15 @@ function App() {
   return (
     <Router>
       <Context.Provider 
-        value={{ textContent, FontAwesomeIcon, handleSwitch }}>
+        value={{ 
+          textContent, 
+          FontAwesomeIcon, 
+          handleSwitch,
+          currentIndex,
+          setCurrentIndex,
+          isMoving,
+          setIsMoving
+          }}>
         <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
