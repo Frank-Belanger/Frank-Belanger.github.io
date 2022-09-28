@@ -9,7 +9,7 @@ export default function SocialMediaIcons(props) {
                 prefix: "far"
             },
             {
-                href: "https://www.linkedin.com/in/francois-belanger-8539a0154/",
+                href: "www.linkedin.com/in/frankbelanger",
                 icon: "linkedin",
                 prefix: "fab"           
             },
