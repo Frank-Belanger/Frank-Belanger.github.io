@@ -1,6 +1,6 @@
 const frenchText = {  
   download: {
-    resume: "https://raw.githubusercontent.com/Frank-Belanger/Frank-Belanger.github.io/main/src/static/2021_Francois_Belanger_CV.pdf"
+    resume: "https://raw.githubusercontent.com/Frank-Belanger/Frank-Belanger.github.io/main/src/static/Francois_Belanger_CV.pdf"
   },
   navigation: {
     home: 'Accueil',
@@ -9,7 +9,7 @@ const frenchText = {
   },
   home: {
     greetings: 'Bonjour!',
-    description: 'Mon nom est François Bélanger et je suis developpeur Full-Stack. J\'ai utilisé les technologies suivantes pour construire cette application:'
+    description: 'Mon nom est François Bélanger et je suis developpeur Full-Stack. J\'ai utilisé les technologies suivantes pour construire ce site:'
   },
   portfolio: [
     { 
@@ -31,7 +31,7 @@ const frenchText = {
     experience: {
       title: 'Expérience',
       place: 'Wolters Kluwer',
-      year: '[ 2020 - présent ]',
+      year: '[ 2020 - 2022 ]',
       work: 'Développeur à l\'automatisation'
     },
     stack: {
